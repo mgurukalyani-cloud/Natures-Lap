@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Nature's Lap</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="home-page">
+
+<!-- ===== VIDEO BACKGROUND ===== -->
+<div class="video-wrapper">
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="Kollengode_One_of_the_best_village_in_India_Kerala_Vlog_58_1080P (1) (1).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<!-- ===== BACKGROUND MUSIC ===== -->
+<audio id="bgAudio" loop>
+    <source src="krishna-flute.mp3" type="audio/mp3">
+</audio>
+
+<!-- ===== HERO CONTENT ===== -->
+<div class="hero-content">
+    <h1>Nature’s Lap 🌿</h1>
+    <p>Green Fields • Hardworking Farmers • Healthy Life</p>
+    <a href="explore.html" class="btn">Explore Now</a>
+</div>
+
+<!-- ===== JAVASCRIPT TO ENABLE AUDIO ===== -->
+<script>
+const audio = document.getElementById("bgAudio");
+
+function enableMusic() {
+    audio.volume = 1.0;
+    audio.play().catch(err => {
+        console.log("Audio play failed:", err);
+    });
+
+    document.removeEventListener("click", enableMusic);
+    document.removeEventListener("keydown", enableMusic);
+}
+
+document.addEventListener("click", enableMusic);
+document.addEventListener("keydown", enableMusic);
+</script>
+
+</body>
+</html>

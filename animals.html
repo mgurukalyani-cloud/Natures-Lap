@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Village Animals</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+background:linear-gradient(120deg,#11998e,#38ef7d);
+font-family:Arial;
+}
+
+.page{
+opacity:0;
+transform:translateY(60px);
+transition:1s;
+}
+
+.page.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.animal-img{
+width:100%;
+height:400px;
+object-fit:cover;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.box{
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.back-btn{
+background:#198754;
+color:white;
+padding:10px 25px;
+border-radius:30px;
+text-decoration:none;
+}
+
+.back-btn:hover{
+background:#145c32;
+transform:scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<div class="container py-5 page" id="page">
+
+<div class="box">
+
+<h1 class="text-success text-center mb-4">
+Village Animals 🐄
+</h1>
+
+<img src="https://c8.alamy.com/comp/2F4R66G/domestic-animals-with-shepard-moving-to-home-in-the-evening-shingadgaon-maharashtra-india-march-142021-2F4R66G.jpg"
+class="animal-img mb-4">
+
+<p>
+Village animals like cows, buffaloes and goats
+support rural economy through milk production,
+organic farming and transportation.
+</p>
+
+<h4>Importance</h4>
+<ul>
+<li>Milk production</li>
+<li>Organic manure</li>
+<li>Income generation</li>
+<li>Farming assistance</li>
+</ul>
+
+<h4>Learn More</h4>
+<ul>
+<li><a target="_blank" href="https://en.wikipedia.org/wiki/Livestock_in_India">Wikipedia</a></li>
+<li><a target="_blank" href="https://www.fao.org/home/en">FAO Portal</a></li>
+</ul>
+
+<div class="text-center mt-4">
+<a href="rivers-animals.html" class="back-btn">
+⬅ Back to Explore Villages
+</a>
+</div>
+
+</div>
+</div>
+
+<script>
+window.onload=function(){
+document.getElementById("page")
+.classList.add("show");
+};
+</script>
+
+</body>
+</html>

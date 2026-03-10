@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rivers of India</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+background:linear-gradient(120deg,#56ab2f,#a8e063);
+font-family:Arial;
+}
+
+/* PAGE ENTRY ANIMATION */
+.page{
+opacity:0;
+transform:translateY(60px);
+transition:1s ease;
+}
+
+.page.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* CONTENT BOX */
+.box{
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* IMAGE */
+.river-img{
+width:100%;
+height:400px;
+object-fit:cover;
+border-radius:15px;
+margin-bottom:20px;
+}
+
+/* LINKS */
+.read-link{
+text-decoration:none;
+color:#198754;
+font-weight:bold;
+}
+
+.read-link:hover{
+text-decoration:underline;
+}
+
+/* BACK BUTTON */
+.back-container{
+text-align:center;
+margin-top:40px;
+}
+
+.back-btn{
+background:#198754;
+color:white;
+padding:12px 30px;
+border-radius:30px;
+text-decoration:none;
+transition:.3s;
+}
+
+.back-btn:hover{
+background:#145c32;
+transform:scale(1.05);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container py-5 page" id="page">
+
+<div class="box">
+
+<h1 class="text-success text-center mb-4">
+Major Rivers of India 🌊
+</h1>
+
+<img src="https://img.freepik.com/premium-photo/village-with-houses-river_865967-684510.jpg"
+class="river-img">
+
+<p>
+India has one of the largest river systems in the world.
+Major rivers such as the Ganga, Yamuna, Brahmaputra,
+Godavari and Krishna support agriculture, transportation,
+drinking water supply and biodiversity across villages
+and cities.
+</p>
+
+<h4 class="mt-4">Importance of Rivers</h4>
+
+<ul>
+<li>Irrigation for agriculture</li>
+<li>Hydroelectric power generation</li>
+<li>Support for rural livelihoods</li>
+<li>Cultural and religious significance</li>
+<li>Maintenance of ecological balance</li>
+</ul>
+
+<!-- ✅ EXTRACTED LINK ADDED -->
+<h4 class="mt-4">📚 Learn More About Indian Rivers</h4>
+
+<ul>
+<li>
+<a class="read-link" target="_blank"
+href="https://thegeographyteacher.com/indias-rivers/">
+India’s Rivers – Geography Teacher Website
+</a>
+</li>
+
+<li>
+<a class="read-link" target="_blank"
+href="https://en.wikipedia.org/wiki/Rivers_of_India">
+Rivers of India – Wikipedia
+</a>
+</li>
+</ul>
+
+<div class="back-container">
+<a href="rivers-animals.html" class="back-btn">
+⬅ Back to Explore Villages
+</a>
+</div>
+
+</div>
+</div>
+
+<!-- PAGE LOAD ANIMATION -->
+<script>
+window.onload=function(){
+document.getElementById("page").classList.add("show");
+};
+</script>
+
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Village Lifestyle - Nature's Lap</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* BODY */
+body{
+background:linear-gradient(135deg,#11998e,#38ef7d);
+font-family:'Poppins',sans-serif;
+overflow-x:hidden;
+padding-top:70px;
+}
+
+/* HERO */
+.hero{
+background:url("https://images.unsplash.com/photo-1500382017468-9049fed747ef") center/cover no-repeat;
+height:60vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+position:relative;
+}
+
+.hero::after{
+content:'';
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+}
+
+.hero h1{
+font-size:48px;
+font-weight:600;
+}
+
+.hero p{
+font-size:20px;
+max-width:700px;
+margin:auto;
+}
+
+/* SECTION */
+.section{
+margin-top:60px;
+}
+
+/* CARD */
+.life-card{
+background:white;
+border-radius:20px;
+padding:40px;
+box-shadow:0 15px 40px rgba(0,0,0,0.2);
+transition:.4s;
+}
+
+.life-card:hover{
+transform:translateY(-10px);
+}
+
+/* IMAGES */
+.life-img{
+width:100%;
+height:240px;
+object-fit:cover;
+border-radius:15px;
+transition:.4s;
+}
+
+.life-img:hover{
+transform:scale(1.05);
+}
+
+/* CULTURE IMAGE */
+.culture-img{
+width:100%;
+height:280px;
+object-fit:cover;
+border-radius:15px;
+margin-top:20px;
+}
+
+/* TITLES */
+.section-title{
+color:#11998e;
+font-weight:600;
+margin-bottom:20px;
+font-size:28px;
+}
+
+/* BUTTON */
+.back-btn{
+background:linear-gradient(45deg,#11998e,#38ef7d);
+color:white;
+padding:12px 35px;
+border-radius:40px;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+.back-btn:hover{
+transform:scale(1.08);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top shadow">
+
+<div class="container">
+
+<a class="navbar-brand fw-semibold" href="index.html">
+Nature's Lap 🌿
+</a>
+
+<button class="navbar-toggler" type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="explore.html">Explore</a></li>
+<li class="nav-item"><a class="nav-link active" href="villages.html">Villages</a></li>
+<li class="nav-item"><a class="nav-link" href="agriculture.html">Agriculture</a></li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+
+<div class="hero-content">
+
+<h1>Village Lifestyle 🌾</h1>
+
+<p>
+Village lifestyle represents harmony between humans and nature.
+People live peacefully with agriculture, traditions and strong community relationships.
+</p>
+
+</div>
+</div>
+
+<!-- DAILY LIFE -->
+<div class="container section">
+
+<div class="life-card">
+
+<h3 class="section-title text-center">🌱Villages</h3>
+
+<div class="row g-4 mt-3">
+
+<div class="col-md-6">
+<img src="https://i.ytimg.com/vi/7ntX79XFy30/maxresdefault.jpg" class="life-img">
+<p class="text-center mt-2">Animal Care</p>
+</div>
+
+<div class="col-md-6">
+<img src="https://thumbs.dreamstime.com/b/homes-built-bare-red-bricks-tin-sheet-roofs-residents-tribal-lands-india-any-roads-basic-living-amenities-122611987.jpg" class="life-img">
+<p class="text-center mt-2">Village Homes</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- GALLERY BOX -->
+<div class="container section">
+
+<div class="life-card text-center">
+
+<h3 class="section-title">📸 Village Image Gallery</h3>
+
+<p>Click below to explore more village images.</p>
+
+<a href="gallery.html" class="btn btn-success btn-lg">
+View Village Images
+</a>
+
+</div>
+
+</div>
+
+
+<!-- CULTURE -->
+<div class="container mt-5">
+
+<div class="life-card">
+
+<h3 class="section-title text-center">🎉 Culture & Traditions</h3>
+
+<p>
+Village communities celebrate festivals together, maintaining traditions passed across generations.
+Folk dances, local fairs and religious celebrations strengthen social unity and cultural identity.
+</p>
+
+<img src="https://tse1.mm.bing.net/th/id/OIP.9W5h3yQXM95UCUX7lSP6JAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"
+class="culture-img"
+alt="Indian Village Culture">
+
+</div>
+
+</div>
+
+
+<!-- COMMUNITY -->
+<div class="container mt-5">
+
+<div class="life-card">
+
+<h3 class="section-title text-center">🤝 Community Bonding</h3>
+
+<p>
+<b>Community Bondings in Villages</b><br>
+People in villages share strong emotional bonds. Mutual help, respect for elders and collective decision-making through village councils create a supportive social environment.<br><br>
+
+The bondings within villages are a testament to the enduring strength of community ties. Villages are characterized by their small size, which fosters personal connections and trust. The shared history and heritage of villagers create a collective identity, while economic interdependence through agriculture and crafts strengthens social bonds. Festivals and communal celebrations serve as occasions for villagers to come together, reinforcing their social cohesion and mutual support.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- BACK BUTTON -->
+<div class="text-center mt-5 mb-5">
+
+<a href="villages.html" class="back-btn">
+⬅ Back to Villages
+</a>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

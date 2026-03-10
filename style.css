@@ -1,0 +1,239 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+/* ================= HOME PAGE ================= */
+
+.home-page{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    text-align:center;
+    color:white;
+    overflow:hidden;
+}
+
+/* VIDEO BACKGROUND */
+
+.video-wrapper{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    z-index:-1;
+}
+
+.bg-video{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* HERO CONTENT */
+
+.hero-content h1{
+    font-size:48px;
+    font-weight:600;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin:15px 0;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn{
+    display:inline-block;
+    padding:12px 30px;
+    margin-top:30px;
+    background:green;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    font-size:16px;
+    transition:0.2s ease;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+    background:darkgreen;
+}
+
+.btn:active{
+    transform:translateY(0);
+}
+
+/* ================= EXPLORE PAGE ================= */
+
+.explore-page{
+    height:100vh;
+    background:url("https://i.pinimg.com/736x/26/01/2c/26012c2536bddce6b7aeecbd51827c04.jpg") no-repeat center/cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.marquee-container{
+    width:100%;
+    overflow:hidden;
+    margin-bottom:25px;
+}
+
+.marquee-text{
+    white-space:nowrap;
+    font-size:20px;
+    display:inline-block;
+    padding-left:100%;
+    animation:scroll-left 15s linear infinite;
+    color:black;
+}
+
+@keyframes scroll-left{
+    from{ transform:translateX(0); }
+    to{ transform:translateX(-100%); }
+}
+
+.explore-page h1{
+    font-size:38px;
+    margin-bottom:25px;
+    color:black;
+    font-weight:500;
+}
+
+.explore-buttons{
+    display:flex;
+    gap:40px;
+    margin-top:20px;
+}
+
+/* ================= VILLAGE PAGE ================= */
+
+.village-page{
+    height:100vh;
+    background:url("https://i.pinimg.com/736x/7a/76/1d/7a761d0c69df3858fceff11ef8708f48.jpg") no-repeat center/cover;
+    display:flex;
+    flex-direction:column;
+    padding-top:80px; /* navbar space */
+    overflow:hidden;
+}
+
+/* Content Position */
+.content-wrapper{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    padding-top:180px; /* adjust if needed */
+}
+
+/* Heading & Text */
+.village-page h1{
+    font-weight:500;
+}
+
+.village-text{
+    font-size:18px;
+    font-weight:400;
+}
+
+/* Move Cards Down */
+.village-images-section{
+    margin-top:180px;
+}
+
+/* Image Styling */
+.village-img{
+    height:150px;
+    object-fit:cover;
+}
+
+/* Card Styling */
+.village-card{
+    border:none;
+    opacity:0;
+    transform:translateY(20px);
+    animation:cardFade 0.8s ease forwards;
+    transition:transform 0.3s ease;
+}
+
+/* Animation Delay */
+.village-card:nth-child(1){ animation-delay:0.2s; }
+.village-card:nth-child(2){ animation-delay:0.4s; }
+.village-card:nth-child(3){ animation-delay:0.6s; }
+
+@keyframes cardFade{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Light Hover */
+.village-card:hover{
+    transform:translateY(-6px);
+}
+
+.small-text{
+    font-size:14px;
+    font-weight:500;
+}
+
+/* ================= INFO & AGRICULTURE PAGE ================= */
+
+.info-page{
+    height:100vh;
+    background:url("https://i.pinimg.com/736x/7a/76/1d/7a761d0c69df3858fceff11ef8708f48.jpg") no-repeat center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.content{
+    text-align:center;
+}
+
+.info-page h1{
+    font-size:38px;
+    margin-bottom:20px;
+    font-weight:500;
+}
+
+.info-page p{
+    font-size:18px;
+}
+
+/* ================= BACK BUTTON ================= */
+
+.back-btn{
+    display:inline-block;
+    margin-top:30px;
+    text-decoration:none;
+    color:green;
+    font-size:18px;
+    font-weight:600;
+    transition:0.2s ease;
+}
+
+.back-btn:hover{
+    transform:translateY(-2px);
+    color:darkgreen;
+}
+
+.back-btn:active{
+    transform:translateY(0);
+}
